@@ -50,6 +50,7 @@ const theme = createTheme({
 
 const Form = ({ onSubmit }) => {
   const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [resumeLink, setResumeLink] = useState(''); 
@@ -109,7 +110,7 @@ const Form = ({ onSubmit }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSubmit({ name, title, description,resumeLink, projects, education, skills });
+    onSubmit({ name, email, title, description,resumeLink, projects, education, skills });
   };
 
   return (
@@ -126,6 +127,16 @@ const Form = ({ onSubmit }) => {
                   onChange={(e) => setName(e.target.value)}
                 />
               </Grid>
+              <Grid item>
+  <TextField
+    fullWidth
+    label="Email"
+    value={email}
+    type="email"
+    onChange={(e) => setEmail(e.target.value)}
+  />
+</Grid>
+
               <Grid item>
                 <TextField
                   fullWidth

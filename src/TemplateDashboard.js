@@ -304,77 +304,38 @@ const educationHtml = data.education.map((education, index) => {
       </div>
     </section>
     
+        
         <!-- Contact Section -->
         <section
           id="contact"
-          class="bg-gradient-to-r from-blue-50 to-gray-100 py-20"
+          class="bg-gradient-to-r from-blue-50 to-indigo-100 py-20"
         >
-          <div class="container mx-auto">
-            <h2 class="text-3xl  text-center text-gray-800 mb-8">
-              Contact Me
-            </h2>
-            <div class="flex justify-center">
-              <div class="w-full max-w-xl">
-                <form
-                  action="#"
-                  method="POST"
-                  class="bg-white p-8 rounded-lg shadow-lg"
-                >
-                  <div class="mb-4">
-                    <label
-                      for="name"
-                      class="block text-gray-700 text-sm font-bold mb-2"
-                      >Name</label
-                    >
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                      required
-                    />
-                  </div>
-                  <div class="mb-4">
-                    <label
-                      for="email"
-                      class="block text-gray-700 text-sm font-bold mb-2"
-                      >Email</label
-                    >
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                      required
-                    />
-                  </div>
-                  <div class="mb-4">
-                    <label
-                      for="message"
-                      class="block text-gray-700 text-sm font-bold mb-2"
-                      >Message</label
-                    >
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows="4"
-                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                      required
-                    ></textarea>
-                  </div>
-                  <div class="flex justify-center">
-                    <button
-                      type="submit"
-                      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                    >
-                      Send
-                    </button>
-                  </div>
-                </form>
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-4xl mx-auto">
+              <h2 class="text-4xl font-bold text-gray-800 mb-8">
+                Contact Me
+              </h2>
+              <div class="bg-white shadow-xl rounded-lg py-8 px-6 md:px-12">
+                <p class="text-lg mb-4 text-gray-700">
+                  If you wish to reach out, feel free to contact me via email at:
+                </p>
+                <div class="text-center mb-8">
+                  <span class="inline-block bg-indigo-100 text-indigo-600 font-semibold py-2 px-4 rounded-full border border-indigo-300">
+                    <!-- Here the email is displayed in a way to confuse bots but readable by humans -->
+                    ${data.email.split('@')[0].replace(/\./g, ' DOT ')} AT ${data.email.split('@')[1].replace(/\./g, ' DOT ')}
+                  </span>
+                </div>
+                <p class="text-gray-600">
+                  Please replace " DOT " with "." and " AT " with "@" to get the correct email address.
+                </p>
               </div>
             </div>
           </div>
         </section>
+        
+
+        
+        
         <footer class="bg-gray-900 text-white text-center p-4">
           <p>Copyright &copy; 2024 by MyPortfolio. All rights reserved.</p>
         </footer>
@@ -747,75 +708,31 @@ const educationHtml = data.education.map((education, index) => {
   
       <!-- Contact Section -->
       <section
-        id="contact"
-        class="bg-gradient-to-r from-blue-50 to-gray-100 py-20"
-      >
-        <div class="container mx-auto">
-          <h2 class="text-3xl  text-center text-gray-800 mb-8">
-            Contact Me
-          </h2>
-          <div class="flex justify-center">
-            <div class="w-full max-w-xl">
-              <form
-                action="#"
-                method="POST"
-                class="bg-white p-8 rounded-lg shadow-lg"
-              >
-                <div class="mb-4">
-                  <label
-                    for="name"
-                    class="block text-gray-700 text-sm font-bold mb-2"
-                    >Name</label
-                  >
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    required
-                  />
+          id="contact"
+          class="bg-gradient-to-r from-blue-50 to-indigo-100 py-20"
+        >
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-4xl mx-auto">
+              <h2 class="text-4xl font-bold text-gray-800 mb-8">
+                Contact Me
+              </h2>
+              <div class="bg-white shadow-xl rounded-lg py-8 px-6 md:px-12">
+                <p class="text-lg mb-4 text-gray-700">
+                  If you wish to reach out, feel free to contact me via email at:
+                </p>
+                <div class="text-center mb-8">
+                  <span class="inline-block bg-indigo-100 text-indigo-600 font-semibold py-2 px-4 rounded-full border border-indigo-300">
+                    <!-- Here the email is displayed in a way to confuse bots but readable by humans -->
+                    CONTACT_EMAIL AT DOMAIN DOT COM
+                  </span>
                 </div>
-                <div class="mb-4">
-                  <label
-                    for="email"
-                    class="block text-gray-700 text-sm font-bold mb-2"
-                    >Email</label
-                  >
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    required
-                  />
-                </div>
-                <div class="mb-4">
-                  <label
-                    for="message"
-                    class="block text-gray-700 text-sm font-bold mb-2"
-                    >Message</label
-                  >
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="4"
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    required
-                  ></textarea>
-                </div>
-                <div class="flex justify-center">
-                  <button
-                    type="submit"
-                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                  >
-                    Send
-                  </button>
-                </div>
-              </form>
+                <p class="text-gray-600">
+                  Please replace " DOT " with "." and " AT " with "@" to get the correct email address.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
       <footer class="bg-gray-900 text-white text-center p-4">
         <p>Copyright &copy; 2024 by MyPortfolio. All rights reserved.</p>
       </footer>
