@@ -10,7 +10,7 @@ const Navbar = ({navClass, linkClassName}) => (
 
 export const NavComponent = ({ navClass, linkClassName }) => (
   <nav className={navClass}>
-    {["home", "templates", "about", "contact"].map((section) => {
+    {["home", "templates"].map((section) => {
       let path;
       switch (section) {
         case "home":
